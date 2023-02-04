@@ -1,0 +1,29 @@
+{
+  "name": "nice-store",
+  "version": "0.0.1",
+  "description": "Create smart store",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/esmodule/index.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npm run build:commonjs && npm run build:esmodules",
+    "build:commonjs": "tsc --module commonjs --outDir dist/commonjs",
+    "build:esmodules": "tsc --module es2015 --outDir dist/esmodule",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "@types/react": "^17.0.53",
+    "@types/react-dom": "^17.0.18",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

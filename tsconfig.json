@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2015",
+      "es2016",
+      "es2017",
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist/commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "preserveSymlinks": true
+  }
+}
